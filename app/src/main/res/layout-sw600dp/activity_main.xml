@@ -12,81 +12,114 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="290dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/taza_fondo" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:fontFamily="@font/bungee_shade"
-        android:text="Inicio de sesion"
-        android:textColor="#000000"
-        android:textSize="64sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="700dp"
-        android:layout_height="400dp"
-        android:background="#B2B09E"
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/txtUsuario"
-            android:layout_width="600dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
-            android:backgroundTint="#FFFFFF"
-            android:ems="10"
-            android:fontFamily="@font/comfortaa_semibold"
-            android:hint="Usuario"
-            android:inputType="text"
-            android:textColor="#000000"
-            android:textColorHint="#FFFFFF"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/txtContrasena"
-            android:layout_width="600dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
-            android:backgroundTint="#FFFFFF"
-            android:ems="10"
-            android:fontFamily="@font/comfortaa_semibold"
-            android:hint="Contraseña"
-            android:inputType="textPassword"
-            android:textColor="#000000"
-            android:textColorHint="#FFFFFF"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/bungee_shade"
+                android:text="Inicio de sesion"
+                android:textColor="#000000"
+                android:textSize="64sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/btnInicioSesion"
-            android:layout_width="600dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:backgroundTint="#D7CFCC"
-            android:fontFamily="@font/comfortaa_semibold"
-            android:text="Iniciar sesion"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtContrasena" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="700dp"
+                android:layout_height="400dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="200dp"
+                android:background="#B2B09E"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <Button
+                    android:id="@+id/btnInicioSesionGoogle"
+                    android:layout_width="232dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:backgroundTint="#D7CFCC"
+                    android:drawableLeft="@drawable/minilogo"
+                    android:fontFamily="@font/comfortaa_semibold"
+                    android:paddingLeft="10dp"
+                    android:text="Acceder con Google"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtContrasena" />
+
+                <EditText
+                    android:id="@+id/txtUsuario"
+                    android:layout_width="600dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:ems="10"
+                    android:fontFamily="@font/comfortaa_semibold"
+                    android:hint="Usuario"
+                    android:inputType="text"
+                    android:textColor="#000000"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/txtContrasena"
+                    android:layout_width="600dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:ems="10"
+                    android:fontFamily="@font/comfortaa_semibold"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:textColor="#000000"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
+
+                <Button
+                    android:id="@+id/btnInicioSesion"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="50dp"
+                    android:backgroundTint="#D7CFCC"
+                    android:fontFamily="@font/comfortaa_semibold"
+                    android:text="Iniciar sesion"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtContrasena" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

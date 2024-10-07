@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "31635261851",
+    "project_id": "citriusycoffe",
+    "storage_bucket": "citriusycoffe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31635261851:android:5b5162979a8a1b42c9b93e",
+        "android_client_info": {
+          "package_name": "cirtrius.coffe.citriuscoffe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-E3PnpcmEtVsIdbHd5A4h7xqrxzI2YvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
