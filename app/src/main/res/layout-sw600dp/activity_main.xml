@@ -8,15 +8,6 @@
     android:background="#A6A493"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/taza_fondo" />
-
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
@@ -29,6 +20,14 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="650dp"
+                android:layout_height="800dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/taza_fondo" />
 
             <TextView
                 android:id="@+id/textView"
@@ -47,8 +46,7 @@
                 android:id="@+id/constraintLayout"
                 android:layout_width="700dp"
                 android:layout_height="400dp"
-                android:layout_marginTop="150dp"
-                android:layout_marginBottom="200dp"
+                android:layout_marginTop="100dp"
                 android:background="#B2B09E"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
